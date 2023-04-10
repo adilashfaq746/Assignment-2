@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example</title>
+</head>
+<body>
+  <h1>My List</h1>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+
+  <script>
+    function addListItem(text) {
+      const list = document.querySelector('ul');
+
+      const newItem = document.createElement('li');
+      newItem.textContent = text;
+
+      list.appendChild(newItem);
+    }
+
+    addListItem('Item 3');
+  </script>
+</body>
+</html>

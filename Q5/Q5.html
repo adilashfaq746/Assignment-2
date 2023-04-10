@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example</title>
+  <style>
+    #myDiv {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <button onclick="changeBackgroundColor(myDiv, 'gray')">Make it gray</button>
+  <button onclick="changeBackgroundColor(myDiv, 'green')">Make it green</button>
+
+  <script>
+    function changeBackgroundColor(element, color) {
+      element.style.backgroundColor = color;
+    }
+  </script>
+</body>
+</html>
